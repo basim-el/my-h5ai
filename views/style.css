@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid #ccc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.folder-name {
+  cursor: pointer;
+}
+
+.folder-icon,
+.file-icon {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.folder-item ul {
+  display: none;
+}
+
+.file-explorer {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.folder-item {
+  cursor: pointer;
+}
+
+.file-explorer li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-explorer .folder-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.file-explorer span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.test {
+  margin-right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.file-tree {
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+#folder-content {
+  flex-grow: 40;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.icon-medium {
+  font-size: 32px;
+}
+
+.icon-large {
+  font-size: 48px;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.file i {
+  margin-right: 10px;
+}
+
+.folder {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.folder i {
+  margin-right: 10px;
+}
+
+.file-explorer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-explorer li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.file-explorer li:last-child {
+  border-bottom: none;
+}
+
+.file-explorer li:hover {
+  background-color: #f5f5f5;
+}
+
+.file-explorer li.folder {
+  cursor: pointer;
+}
+
+.file-explorer li.folder i.icon {
+  margin-right: 8px;
+  color: #0078d7;
+}
+
+.file-explorer li.file i.icon {
+  margin-right: 8px;
+  color: #888;
+}
+
+.file-explorer li.file span.file-info {
+  margin-left: auto;
+  font-size: 14px;
+  color: #777;
+}
+
+.file-explorer li.file span.file-info:before {
+  margin-right: 8px;
+  margin-left: 16px;
+  color: #ccc;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid li {
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+.medium li {
+  width: 200px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+.details li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+}
+
+.details li i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.details li .file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.details li .file-info .file-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.details li .file-info .file-size {
+  font-size: 25px;
+  color: #777;
+}
